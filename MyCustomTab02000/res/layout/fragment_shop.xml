@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout android:layout_width="fill_parent"
+                  android:layout_height="40dp"
+                  android:gravity="center"
+                  android:id="@+id/page_shop_tittle"
+                  android:background="@drawable/titlebar"
+            >
+        <TextView android:layout_width="wrap_content" android:layout_height="fill_parent"
+                  android:text="逛逛"
+                  android:gravity="center"
+                  android:textSize="20sp"
+                  android:textStyle="bold"
+                  android:textColor="@android:color/white"
+                />
+</LinearLayout>
+
+
+
+    <!--listview显示列表-->
+   <ListView android:layout_width="fill_parent" android:layout_height="wrap_content"
+               android:id="@+id/goodlist"
+               android:layout_below="@+id/page_shop_tittle"
+
+            >
+
+    </ListView>
+
+    </RelativeLayout>

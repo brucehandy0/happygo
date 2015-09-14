@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                             android:orientation="vertical"
+                             android:layout_width="fill_parent"
+                             android:layout_height="fill_parent"
+                             android:gravity="center"
+                             android:background="@drawable/bacbr"
+        >
+    <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_marginTop="300dp"
+            android:layout_height="350dp"
+
+            >
+
+        <EditText android:layout_width="300dp" android:layout_height="40dp"
+                  android:layout_marginBottom="10dp"
+                  android:padding="5dip"
+                  android:layout_centerHorizontal="true"
+                  android:hint="用户名"
+                  android:background="@drawable/et_style"
+                  android:id="@+id/login_et_username"
+                />
+
+        <EditText android:layout_width="300dp" android:layout_height="40dp"
+
+                  android:padding="5dip"
+                  android:inputType="textPassword"
+                  android:layout_marginBottom="10dp"
+                  android:layout_centerHorizontal="true"
+                  android:hint="密码"
+                  android:background="@drawable/et_style"
+                  android:layout_below="@id/login_et_username"
+                  android:id="@+id/login_et_pwd"
+                />
+
+
+        <Button android:layout_width="180dp"
+                android:layout_height="35dp"
+                android:text="登陆"
+                android:layout_margin="10dp"
+                android:background="@drawable/btn_login"
+                android:layout_below="@+id/login_et_pwd"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/login_btn_login"
+
+
+                />
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="忘记密码？"
+                  android:textSize="18dp"
+                  android:layout_margin="5dp"
+                  android:layout_alignParentBottom="true"
+                  android:layout_alignParentLeft="true"
+                  android:id="@+id/tv_findpwd"
+                />
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="新用户"
+                  android:textSize="18dp"
+                  android:layout_margin="5dp"
+                  android:layout_alignParentBottom="true"
+                  android:layout_alignParentRight="true"
+                  android:id="@+id/tv_newuser"
+                />
+    </RelativeLayout>
+</RelativeLayout>

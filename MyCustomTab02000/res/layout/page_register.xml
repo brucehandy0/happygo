@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+        >
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:background="@drawable/titlebar"
+           >
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="注册"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                />
+
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="110dp" android:weightSum="1">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="用户名    ："
+                android:textStyle="normal"
+                android:textSize="22dp"
+
+                android:textColor="#000"/>
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="使用字母、下划线"
+                android:textColor="#202022"
+                android:layout_weight="0.52"
+                android:id="@+id/reg_et_username"
+                />
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="160dp" android:weightSum="1">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="手机号    ："
+                android:textSize="22dp"
+                android:textColor="#000"/>
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="请填写手机号码"
+                android:textColor="#202022"
+                android:layout_weight="0.52"
+                android:inputType="phone"
+                android:id="@+id/reg_et_phone"
+                />
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="210dp" android:weightSum="1">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="密码        ："
+                android:textSize="22dp"
+                android:textColor="#000"/>
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#202022"
+                android:hint="请填写密码"
+                android:layout_weight="0.52"
+                android:inputType="textPassword"
+                android:id="@+id/reg_et_password"
+                />
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="260dp" android:weightSum="1">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="确认密码 ："
+                android:textSize="22dp"
+                android:textColor="#000"/>
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#202022"
+                android:hint="请重新输一遍"
+                android:layout_weight="0.52"
+                android:inputType="textPassword"
+                android:id="@+id/reg_et_repassword"
+                />
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="310dp" android:weightSum="1">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="昵称        ："
+                android:textSize="22dp"
+                android:textColor="#000"/>
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#202022"
+                android:hint="中文和字母组合"
+                android:layout_weight="0.52"
+                android:id="@+id/reg_et_nickname"/>
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="360dp" android:weightSum="1">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="性别        ："
+                android:textSize="22dp"
+                android:textColor="#000"/>
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#202022"
+                android:hint="男或女"
+                android:layout_weight="0.52"
+                android:id="@+id/reg_et_sex"
+                />
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="410dp" android:weightSum="1">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="收货地址 ："
+                android:textSize="22dp"
+                android:textColor="#000"/>
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#202022"
+                android:hint="填写收货地址"
+                android:layout_weight="0.52"
+                android:id="@+id/reg_et_address"
+                />
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:layout_marginTop="450dp">
+
+        <Button
+                android:layout_width="80dp"
+                android:layout_height="35dp"
+                android:text="注册"
+                android:background="@drawable/buttonblue9"
+                android:id="@+id/reg_btn_register"
+                />
+    </LinearLayout>
+
+</RelativeLayout>

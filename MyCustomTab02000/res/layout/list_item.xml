@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@android:color/white"
+        >
+<ImageView android:layout_width="100dp"
+           android:layout_height="100dp"
+           android:background="@drawable/no_pic"
+           android:id="@+id/list_item_pic"
+        />
+  <LinearLayout android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_toRightOf="@id/list_item_pic"
+                android:orientation="vertical"
+          >
+      <TextView
+              android:layout_width="fill_parent"
+              android:layout_height="30dp"
+              android:textAppearance="?android:attr/textAppearanceLarge"
+              android:text="标题："
+              android:id="@+id/item_tv_tittle"/>
+      <TextView
+              android:layout_width="fill_parent"
+              android:layout_height="20dp"
+              android:textAppearance="?android:attr/textAppearanceSmall"
+              android:text="内容："
+              android:ellipsize="end"
+              android:singleLine="true"
+              android:id="@+id/item_tv_content"/>
+      <LinearLayout android:layout_width="fill_parent" android:layout_height="match_parent"
+              android:orientation="horizontal"
+              >
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="价格:"
+                    android:textSize="15dp"
+                    android:layout_gravity="center"
+                  />
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/list_item_price"
+                  />
+          <TextView android:layout_width="60dp" android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="180dp"
+                    android:layout_gravity="center"
+                    android:text=""
+                    android:id="@+id/list_item_username"
+                  />
+</LinearLayout>
+</LinearLayout>
+</RelativeLayout>

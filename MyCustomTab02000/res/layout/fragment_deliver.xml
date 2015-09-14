@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+        >
+    <RelativeLayout android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/page_deli_tittle"
+                    android:background="@drawable/titlebar"
+            >
+        <TextView android:layout_width="wrap_content" android:layout_height="fill_parent"
+                  android:text="发布"
+                  android:gravity="center"
+                  android:textSize="20sp"
+                  android:textStyle="bold"
+                  android:layout_gravity="center_horizontal"
+                  android:textColor="@android:color/white"
+                  android:layout_alignParentTop="true"
+                  android:layout_centerHorizontal="true"
+                />
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="确认"
+                  android:textSize="15sp"
+                  android:textColor="@android:color/white"
+                  android:id="@+id/page_deli_btn_deliver"
+                  android:layout_marginTop="10dp"
+                  android:layout_alignParentTop="true" android:layout_alignParentRight="true"
+                  android:layout_alignParentEnd="true" android:layout_marginRight="20dp"/>
+
+    </RelativeLayout>
+    <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/add_pic"
+            android:layout_marginTop="300dp"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/page_deli_add_imageview"
+            >
+    </ImageView>
+
+    <EditText android:layout_width="match_parent"
+              android:layout_height="40dp"
+              android:layout_below="@id/page_deli_tittle"
+              android:layout_marginLeft="20dp"
+              android:layout_marginRight="20dp"
+              android:layout_marginTop="10dp"
+              android:hint="标题："
+              android:singleLine="true"
+              android:background="@drawable/et_style"
+              android:id="@+id/page_deli_add_tittle"
+            />
+    <EditText android:layout_width="match_parent"
+              android:layout_height="160dp"
+              android:layout_marginLeft="20dp"
+              android:layout_marginRight="20dp"
+              android:layout_marginTop="10dp"
+              android:layout_below="@id/page_deli_add_tittle"
+              android:hint="详情："
+              android:gravity="start"
+              android:background="@drawable/et_style"
+              android:id="@+id/page_deli_add_content"
+            />
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="价格："
+              android:textSize="23dp"
+              android:layout_margin="10dp"
+              android:layout_below="@id/page_deli_add_content"
+              android:id="@+id/page_deli_tv_price"
+            />
+    <EditText android:layout_width="100dp"
+              android:layout_height="23dp"
+              android:layout_alignBottom="@id/page_deli_tv_price"
+              android:layout_toRightOf="@id/page_deli_tv_price"
+              android:background="@drawable/et_style"
+              android:hint="单位：元"
+              android:id="@+id/page_deli_et_price"
+            />
+
+
+
+
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+                  android:layout_marginBottom="0dp"
+                  android:layout_alignParentBottom="true"
+                  android:orientation="vertical"
+                  android:visibility="gone"
+                  android:id="@+id/page_deli_add_view"
+            >
+        <Button android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:text="拍照上传"
+                android:id="@+id/page_deli_addby_camera"
+                />
+        <Button android:layout_width="fill_parent" android:layout_height="40dp"
+                android:text="本地图片"
+                android:id="@+id/page_deli_addby_gallery"
+                />
+        <Button android:layout_width="fill_parent" android:layout_height="40dp"
+                android:text="取消"
+                android:id="@+id/page_deli_add_view_cancle"
+                />
+    </LinearLayout>
+
+
+</RelativeLayout>

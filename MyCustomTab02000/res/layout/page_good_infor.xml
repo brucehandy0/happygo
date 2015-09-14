@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout android:layout_width="fill_parent"
+                  android:layout_height="35dp"
+                  android:gravity="center"
+                  android:id="@+id/page_goodinfor_head"
+                  android:background="@drawable/titlebar"
+            >
+
+
+<TextView android:layout_width="wrap_content" android:layout_height="fill_parent"
+                  android:text="商品详情"
+                  android:gravity="center"
+                  android:textSize="20sp"
+                  android:textStyle="bold"
+                  android:textColor="@android:color/white"
+                />
+</LinearLayout>
+
+
+    <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:scaleType="fitCenter"
+            android:layout_below="@id/page_goodinfor_head"
+            android:layout_margin="15dp"
+            android:id="@+id/page_goodinfor_tittlepic"
+            android:background="@drawable/no_pic"
+            />
+
+
+
+<TextView android:layout_width="150dp"
+          android:layout_height="40dp"
+          android:layout_below="@id/page_goodinfor_head"
+          android:layout_alignTop="@id/page_goodinfor_tittlepic"
+          android:layout_toRightOf="@id/page_goodinfor_tittlepic"
+          android:id="@+id/page_goodinfor_tittle"
+          android:gravity="center"
+          android:hint="标题"
+          android:textSize="20sp"
+        />
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                         android:text="价格:"
+                         android:textSize="17sp"
+                         android:layout_alignLeft="@id/page_goodinfor_tittle"
+                         android:layout_below="@id/page_goodinfor_tittle"
+                         android:layout_margin="10dp"
+                         android:id="@+id/page_goodinfor_price_tag"
+        />
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:text="/元"
+              android:textSize="17sp"
+              android:layout_below="@id/page_goodinfor_tittle"
+              android:layout_toRightOf="@id/page_goodinfor_price_tag"
+              android:layout_margin="10dp"
+              android:id="@+id/page_goodinfor_price"
+            />
+
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:text="卖家:"
+              android:textSize="17sp"
+              android:layout_alignLeft="@id/page_goodinfor_tittle"
+              android:layout_below="@id/page_goodinfor_price_tag"
+              android:layout_margin="10dp"
+              android:id="@+id/page_goodinfor_owner_tag"
+            />
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:hint="卖家名称"
+              android:textSize="17sp"
+              android:layout_below="@id/page_goodinfor_price"
+              android:layout_toRightOf="@id/page_goodinfor_owner_tag"
+              android:layout_margin="10dp"
+              android:id="@+id/page_goodinfor_owner_name"
+            />
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:text="联系方式:"
+              android:textSize="17sp"
+              android:layout_alignLeft="@id/page_goodinfor_tittle"
+              android:layout_below="@id/page_goodinfor_owner_tag"
+              android:layout_margin="10dp"
+              android:id="@+id/page_goodinfor_owner_connect_tag"
+            />
+    <ImageView android:layout_width="20dp"
+               android:layout_height="17dp"
+               android:src="@drawable/pic_connectby_qq"
+               android:id="@+id/page_goodinfor_pic_connectby_qq"
+               android:layout_below="@id/page_goodinfor_owner_name"
+               android:layout_marginTop="15dp"
+               android:layout_toRightOf="@id/page_goodinfor_owner_connect_tag"
+            />
+    <Button android:layout_width="60dp" android:layout_height="30dp"
+            android:id="@+id/page_goodinfor_btn_like"
+            android:text="收藏"
+            android:textSize="15sp"
+            android:layout_below="@id/page_goodinfor_owner_connect_tag"
+            android:layout_alignLeft="@id/page_goodinfor_owner_connect_tag"
+            android:background="@drawable/buttonblue9"
+            />
+
+
+    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content"
+              android:hint="详情~~~~~~~~~"
+              android:textSize="18sp"
+              android:layout_below="@id/page_goodinfor_btn_like"
+              android:id="@+id/page_goodinfor_content"
+            />
+
+
+</RelativeLayout>

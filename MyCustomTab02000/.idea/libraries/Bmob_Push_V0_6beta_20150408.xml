@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Bmob_Push_V0.6beta_20150408">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/Bmob_Push_V0.6beta_20150408.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/BmobSDK_V3.4.1_0710.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

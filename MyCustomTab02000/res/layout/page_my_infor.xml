@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+        >
+<RelativeLayout android:layout_width="fill_parent"
+              android:layout_height="40dp"
+
+              android:background="@drawable/titlebar"
+        >
+    <ImageView android:layout_width="40dp" android:layout_height="fill_parent"
+               android:id="@+id/page_my_infor_iv_back"
+               android:src="@drawable/tittle_btn_back"
+               android:layout_alignParentLeft="true"/>
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="fill_parent"
+              android:text="个人信息"
+              android:textColor="#fff"
+              android:gravity="center"
+              android:layout_centerInParent="true"
+            />
+      <TextView android:layout_width="wrap_content" android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:text="修改"
+                android:textColor="#fff"
+                android:id="@+id/page_my_infor_update"
+                android:gravity="center"
+              />
+
+</RelativeLayout>
+       <TextView android:layout_width="fill_parent" android:layout_height="40dp"
+                 android:layout_marginTop="8dp"
+                 android:text="昵称："
+                 android:padding="10dp"
+                 android:background="@drawable/tv_border"
+                 android:id="@+id/myinfor_nickname"
+               />
+    <TextView android:layout_width="fill_parent" android:layout_height="40dp"
+              android:layout_marginTop="8dp"
+              android:text="性别："
+              android:padding="10dp"
+              android:background="@drawable/tv_border"
+              android:id="@+id/myinfor_sex"
+            />
+    <TextView android:layout_width="fill_parent" android:layout_height="40dp"
+              android:layout_marginTop="8dp"
+              android:text="手机："
+              android:padding="10dp"
+              android:background="@drawable/tv_border"
+              android:id="@+id/myinfor_phone"
+            />
+    <TextView android:layout_width="fill_parent" android:layout_height="40dp"
+              android:layout_marginTop="8dp"
+              android:text="地址："
+              android:padding="10dp"
+              android:background="@drawable/tv_border"
+              android:id="@+id/myinfor_address"
+            />
+
+    <!--隐藏控件-->
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:id="@+id/infor_layout_name"
+            >
+<TextView android:layout_width="90dp" android:layout_height="40dp"
+              android:layout_marginTop="8dp"
+              android:text="昵称："
+              android:padding="10dp"
+
+              android:id="@+id/myinfor_gone_tv_name"
+            />
+<EditText android:layout_width="150dp" android:layout_height="40dp"
+          android:layout_marginTop="8dp"
+          android:layout_marginLeft="10dp"
+          android:background="@drawable/et_style"
+          android:id="@+id/myinfor_gone_et_name"
+
+        />
+</LinearLayout>
+
+
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:id="@+id/infor_layout_sex"
+            >
+<TextView android:layout_width="90dp" android:layout_height="40dp"
+                  android:layout_marginTop="8dp"
+                  android:text="性别："
+                  android:padding="10dp"
+
+                  android:id="@+id/myinfor_gone_tv_sex"
+                />
+<EditText android:layout_width="150dp" android:layout_height="40dp"
+                  android:layout_marginTop="8dp"
+                  android:layout_marginLeft="10dp"
+                  android:background="@drawable/et_style"
+                  android:id="@+id/myinfor_gone_et_sex"
+                />
+</LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:id="@+id/infor_layout_phone"
+            >
+<TextView android:layout_width="90dp" android:layout_height="40dp"
+                  android:layout_marginTop="8dp"
+                  android:text="手机："
+                  android:padding="10dp"
+
+                  android:id="@+id/myinfor_gone_tv_phone"
+                />
+<EditText android:layout_width="150dp" android:layout_height="40dp"
+                  android:layout_marginTop="8dp"
+                  android:layout_marginLeft="10dp"
+                  android:background="@drawable/et_style"
+                  android:id="@+id/myinfor_gone_et_phone"
+                />
+</LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:id="@+id/infor_layout_address"
+            >
+<TextView android:layout_width="90dp" android:layout_height="40dp"
+                  android:layout_marginTop="8dp"
+                  android:text="地址："
+                  android:padding="10dp"
+
+                  android:id="@+id/myinfor_gone_tv_address"
+                />
+<EditText android:layout_width="150dp" android:layout_height="40dp"
+                  android:layout_marginTop="8dp"
+                  android:layout_marginLeft="10dp"
+                  android:background="@drawable/et_style"
+                  android:id="@+id/myinfor_gone_et_address"
+                />
+</LinearLayout>
+    <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+    <Button android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="保存"
+            android:id="@+id/myinfor_btn_save"
+            android:visibility="gone"
+            android:background="@drawable/buttonblue9"
+            android:layout_marginLeft="60dp"
+            />
+    <Button android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="取消"
+            android:id="@+id/myinfor_btn_cancle"
+            android:visibility="gone"
+            android:background="@drawable/buttonblue9"
+            android:layout_toRightOf="@+id/myinfor_btn_save"
+            android:layout_marginLeft="20dp"
+            />
+    </RelativeLayout>
+
+</LinearLayout>
